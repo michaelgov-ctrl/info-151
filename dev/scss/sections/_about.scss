@@ -4,5 +4,29 @@
 @use "../helpers";
 
 #about{
+    padding: 100px 24px;
 
+    #about-top-content{
+        p{
+            color: var(--grey);
+            font-weight: 600;
+            line-height: helpers.rem-calc(28);
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
+
+    .about-card{
+        margin-bottom: 48px;
+        padding: 16px;
+        border-radius: 14px;
+
+        p{
+            color: var(--grey);
+            font-weight: 600;
+            line-height: helpers.rem-calc(28);
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+    }
 }

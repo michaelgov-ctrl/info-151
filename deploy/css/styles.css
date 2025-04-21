@@ -435,9 +435,46 @@ textarea {
 /* =============
     About
 ============= */
+#about {
+  padding: 100px 24px;
+}
+#about #about-top-content p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+#about .about-card {
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#about .about-card p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 /* =============
     Communication
 ============= */
+#communication {
+  padding: 100px 24px;
+}
+#communication #communication-top-content {
+  text-align: center;
+}
+#communication #communication-top-content p {
+  color: var(--grey);
+  font-weight: 600;
+  line-height: 1.75rem;
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
 /* =============
     Hero
 ============= */
@@ -529,26 +566,26 @@ textarea {
   background-color: var(--lilyWhite);
   padding: 100px 24px;
 }
-#packages #top-content {
+#packages #packages-top-content {
   text-align: center;
 }
-#packages #top-content #package-button-container {
+#packages #packages-top-content #package-button-container {
   background-color: var(--white);
   margin: 24px auto;
   padding: 8px;
   border-radius: 10px;
   display: inline-block;
 }
-#packages #top-content #package-button-container button {
+#packages #packages-top-content #package-button-container button {
   border: none;
 }
-#packages #top-content #package-button-container #left-arrow {
+#packages #packages-top-content #package-button-container #left-arrow {
   background-color: var(--white);
   color: var(--grey);
   padding: 13px 18px;
   border-radius: 8px;
 }
-#packages #top-content #package-button-container #right-arrow {
+#packages #packages-top-content #package-button-container #right-arrow {
   background-color: var(--aqua);
   color: var(--white);
   padding: 13px 18px;
@@ -587,3 +624,37 @@ textarea {
 /* =============
     Process
 ============= */
+#process {
+  padding: 100px 24px;
+}
+#process #process-top-content {
+  text-align: center;
+}
+#process #process-top-content p {
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  margin: 20px 0 16px;
+}
+#process #process-card-container {
+  border: 1px solid var(--white);
+}
+#process #process-card-container .process-card {
+  margin-bottom: 48px;
+  padding: 16px;
+  border-radius: 14px;
+}
+#process #process-card-container .process-card h4 {
+  color: var(--nightBlue);
+  font-weight: 600;
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+#process #process-card-container .process-card p {
+  color: var(--grey);
+  font-weight: 600;
+  font-size: 0.875rem;
+  line-height: 1.75rem;
+  margin: 20px 0 16px;
+}
