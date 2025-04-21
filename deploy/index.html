@@ -4,22 +4,28 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        
+        <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+        
         <link rel="stylesheet" href="css/styles.css">
         <title>Name Of Project</title>
     </head>
 <body>
     
-<section>
+<section id="hero">
     <!-- all contenet will go inside this section tag -->
     <section>
         <article>
-            <h1>Perfect place for your business promotion ✌</h1>
+            <h1 class="section-title">Perfect place for your business promotion✌️</h1>
             <p>Businesses generally promote their bran, products, and services by identifying audience.</p>
-            <a href="#">Get Started</a>
+            <a href="#" class="nightBlue-btn">Get Started</a>
             <button><img src="img/hero/play-btn.svg" alt="play button"></button>
         </article>
         
-        <article>
+        <article id="hero-card">
             <img src="img/hero/quote.svg" alt="quote icon">
             <img src="img/hero/star.svg" alt="star icon">
             <h5>4.9</h5>
@@ -29,19 +35,24 @@
 
     <!-- This will be the tag for the image -->
     <aside>
-        <img src="img/hero/hero-right.png" alt="image of a happy person!">
+        <img src="img/hero/hero-right.png" alt="image of a happy person!" class="img-scaler">
     </aside>
 </section>
-<section>
-    <h1>Popular packages</h1>
-    <img src="img/global/green-icon.svg" alt="part of a green outline">
+<section id="packages">
+    <div id="top-content">
+        <h1 class="section-title">Popular packages</h1>
+        <!--
+        <img src="img/global/green-icon.svg" alt="part of a green outline">
+        -->
+        <div id="package-button-container">
+            <button id="left-arrow"><img src="img/packages/arrow-left.svg" alt="left chevron icon"></button>
+            <button id="right-arrow"><img src="img/packages/arrow-right.svg" alt="right chevron icon"></button>
+        </div>
+    </div>
 
-    <button><img src="img/packages/arrow-left.svg" alt="left chevron icon"></button>
-    <button><img src="img/packages/arrow-right.svg" alt="right chevron icon"></button>
-
-    <ul>
-        <li>
-            <img src="img/packages/card-1.jpg" alt="people at a coffee shop">
+    <ul id="package-card-container">
+        <li class="package-card">
+            <img src="img/packages/card-1.jpg" alt="people at a coffee shop" class="img-scaler">
             <p>The basic package to start your promotion</p>
 
             <ul>
@@ -52,8 +63,8 @@
             <h4>200K+ users</h4>
             <h3>$89.00</h3>
         </li>
-        <li>
-            <img src="img/packages/card-2.jpg" alt="people at table">
+        <li class="selected package-card">
+            <img src="img/packages/card-2.jpg" alt="people at table" class="img-scaler">
             <p>The standard package to grow your business</p>
 
             <ul>
@@ -64,8 +75,8 @@
             <h4>140K+ users</h4>
             <h3>$109.00</h3>
         </li>
-        <li>
-            <img src="img/packages/card-3.jpg" alt="people pointing at computer">
+        <li class="package-card">
+            <img src="img/packages/card-3.jpg" alt="people pointing at computer" class="img-scaler">
             <p>The premium package to boost your promotion</p>
 
             <ul>
@@ -78,37 +89,42 @@
         </li>
     </ul>
 </section>
-<section>
-    <section>
-        <h1>Subscribe newsletter</h1>
-        <img src="img/global/green-icon.svg" alt="part of a green outline">
-        <p>Businesses generally promote their brand, products, and services by identifying audience. No wonder that promotion strategy is one of the most important processes in marketing.</p>
+<section id="newsletter">
+    <div id="newsletter-content">
+        <section>
+            <h1 class="section-title">Subscribe newsletter</h1>
+            <!--
+            <img src="img/global/green-icon.svg" alt="part of a green outline">
+            -->
+            <p>Businesses generally promote their brand, products, and services by identifying audience. No wonder that promotion strategy is one of the most important processes in marketing.</p>
+        
+            <form action="#">
+                <input type="text" placeholder="Enter email address">
+                <div>
+                    <button class="nightBlue-btn">Subscribe</button>
+                </div>
+            </form>
+        </section>
     
-        <form action="#">
-            <input type="text" placeholder="Enter email address">
-            <button>Subscribe</button>
-        </form>
-    </section>
-
-    <aside>
-        <img src="img/newsletter/hero.png" alt="happy man with thumbs up">
-    </aside>
-
+        <aside>
+            <img src="img/newsletter/hero.png" alt="happy man with thumbs up" class="img-scaler">
+        </aside>
+    </div>
 </section>
-<section>
+<section id="communication">
     <section>
-        <h1>Global promotion</h1>
+        <h1 class="section-title">Global promotion</h1>
         <img src="img/global/green-icon.svg" alt="part of a green outline">
         <p>Businesses generally promote their brand, products, and services by identifying audience. No wonder that promotion strategy is one of the most important processes in marketing.</p>
     </section>
 
     <aside>
-        <img src="img/communication/promotion-network.png" alt="Interconnected clients">
+        <img src="img/communication/promotion-network.png" alt="Interconnected clients" class="img-scaler">
     </aside>
 
 </section>
-<section>
-    <h1>How it works</h1>
+<section id="process">
+    <h1 class="section-title">How it works</h1>
     <img src="img/global/green-icon.svg" alt="part of a green outline">
     <p>Businesses generally promote their brand, products, and services by identifying audience.</p>
     
@@ -130,10 +146,10 @@
         </li>
     </ul>
 </section>
-<section>
+<section id="about">
     <section>
         <article>
-            <h1>About us</h1>
+            <h1 class="section-title">About us</h1>
             <img src="img/global/green-icon.svg" alt="part of a green outline">
             <p>No wonder that promotion strategy is one of the most important processes in marketing. In fact, it supports your marketing voices to reach your target audience, creates interest, and helps you to engage with them.</p>
         </article>
@@ -152,7 +168,7 @@
     </section>
 
     <aside>
-        <img src="img/about/discussion.jpg" alt="image of happy discussion">
+        <img src="img/about/discussion.jpg" alt="image of happy discussion" class="img-scaler">
     </aside>
 </section>
 
