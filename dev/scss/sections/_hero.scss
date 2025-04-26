@@ -7,67 +7,102 @@
     background-color: var(--lilyWhite);
     padding: 56px 24px;
 
-    // 16px = 1em
-    section{
-        
-        article{
-            p{
-                color: var(--grey);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
-                margin-top: 24px;
-                margin-bottom: 24px;
-            }
-
-            // LOVE HATE //
-            a:link, a:visited{
-                /*
-                background-color: var(--nightBlue);
-                color: var(--white);
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-                padding: 22px 36px;
-                border-radius: 6px;
-                // code for week 4
-                display: inline-block;
-                */
-            }
-
-            a:hover, a:focus{
-
-            }
-
-            button{
-                background-color: var(--white);
-                border: none;
-                height: 60px;
-                width: 60px;
-                border-radius: 100%;
-                margin-left: 30px;
-            }
-        }
-
-        #hero-card{
-            background-color: var(--snowDrop);
-            margin-top: 70px;
-            padding: 24px 20px;
-            border-radius: 12px;
-            
-            h5{
-                color: var(--nightBlue);
-                font-weight: 600;
-                font-size: helpers.rem-calc(14);
-            }
-
-            p{
-                font-size: helpers.rem-calc(14);
-                font-weight: 600;
-                line-height: helpers.rem-calc(24);
-            }
-        }
+    @include helpers.xl{
+        padding: 100px 24px;
     }
 
-    aside{
+    #hero-content-container{
+        @include helpers.md{
+            display: grid;
+            grid-template-areas: "hero-img"
+                                "hero-content";
+            //grid-template-columns: 50% auto;
+        }
+    
+        @include helpers.xl{
+            grid-template-columns: 40% auto;
+            grid-template-areas: "hero-content hero-img";
+    
+            max-width: 1200px;
+            margin: 0 auto;
+        }    
 
+        // 16px = 1em
+        section{
+            @include helpers.md{
+                grid-area: hero-content;
+                padding: 0 15vw;
+            }
+
+            @include helpers.lg{
+                padding: 0 25vw;
+            }    
+
+            @include helpers.xl{
+                padding: 0;
+            }
+
+            article{
+                p{
+                    color: var(--grey);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
+
+                // LOVE HATE //
+                a:link, a:visited{
+                    /*
+                    background-color: var(--nightBlue);
+                    color: var(--white);
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                    padding: 22px 36px;
+                    border-radius: 6px;
+                    // code for week 4
+                    display: inline-block;
+                    */
+                }
+
+                a:hover, a:focus{
+
+                }
+
+                button{
+                    background-color: var(--white);
+                    border: none;
+                    height: 60px;
+                    width: 60px;
+                    border-radius: 100%;
+                    margin-left: 30px;
+                }
+            }
+
+            #hero-card{
+                background-color: var(--snowDrop);
+                margin-top: 70px;
+                padding: 24px 20px;
+                border-radius: 12px;
+                
+                h5{
+                    color: var(--nightBlue);
+                    font-weight: 600;
+                    font-size: helpers.rem-calc(14);
+                }
+
+                p{
+                    font-size: helpers.rem-calc(14);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(24);
+                }
+            }
+        }
+
+        aside{
+            @include helpers.md{
+                grid-area: hero-img;
+            }
+        }
     }
 }

@@ -6,8 +6,22 @@
 #communication{
     padding: 100px 24px;
 
+    @include helpers.xl{
+        max-width: 1200px;
+        margin: 0 auto;
+        gap: 45px;
+    }
+
     #communication-top-content{
         text-align: center;
+
+        @include helpers.md{
+            padding: 0 20vw;
+        }
+
+        @include helpers.lg{
+            padding: 0 10vw;
+        }
 
         p{
             color: var(--grey);

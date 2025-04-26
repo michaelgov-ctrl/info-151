@@ -353,6 +353,15 @@ ul li {
   width: 100%;
 }
 
+.content-padding {
+  padding: 40px 24px;
+}
+@media (min-width: 1200px) {
+  .content-padding {
+    padding: 100px 24px;
+  }
+}
+
 /* =============
     Typography
 ============= */
@@ -436,26 +445,59 @@ textarea {
     About
 ============= */
 #about {
-  padding: 100px 24px;
+  padding: 56px 24px;
 }
-#about #about-top-content p {
+@media (min-width: 768px) {
+  #about {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "about-content" "about-img";
+  }
+}
+@media (min-width: 1200px) {
+  #about {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "about-content about-img";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+#about #about-content-container #about-top-content p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-#about .about-card {
+#about #about-content-container .about-card {
   margin-bottom: 48px;
   padding: 16px;
   border-radius: 14px;
 }
-#about .about-card p {
+#about #about-content-container .about-card p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
+}
+@media (min-width: 768px) {
+  #about aside {
+    grid-area: about-img;
+  }
+}
+@media (min-width: 768px) {
+  #about aside {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #about aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
 }
 
 /* =============
@@ -464,8 +506,25 @@ textarea {
 #communication {
   padding: 100px 24px;
 }
+@media (min-width: 1200px) {
+  #communication {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 45px;
+  }
+}
 #communication #communication-top-content {
   text-align: center;
+}
+@media (min-width: 768px) {
+  #communication #communication-top-content {
+    padding: 0 20vw;
+  }
+}
+@media (min-width: 992px) {
+  #communication #communication-top-content {
+    padding: 0 10vw;
+  }
 }
 #communication #communication-top-content p {
   color: var(--grey);
@@ -482,14 +541,51 @@ textarea {
   background-color: var(--lilyWhite);
   padding: 56px 24px;
 }
-#hero section article p {
+@media (min-width: 1200px) {
+  #hero {
+    padding: 100px 24px;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container {
+    display: -ms-grid;
+    display: grid;
+        grid-template-areas: "hero-img" "hero-content";
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container {
+    -ms-grid-columns: 40% auto;
+    grid-template-columns: 40% auto;
+        grid-template-areas: "hero-content hero-img";
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    grid-area: hero-content;
+    padding: 0 15vw;
+  }
+}
+@media (min-width: 992px) {
+  #hero #hero-content-container section {
+    padding: 0 25vw;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    padding: 0;
+  }
+}
+#hero #hero-content-container section article p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin-top: 24px;
   margin-bottom: 24px;
 }
-#hero section article a:link, #hero section article a:visited {
+#hero #hero-content-container section article a:link, #hero #hero-content-container section article a:visited {
   /*
   background-color: var(--nightBlue);
   color: var(--white);
@@ -501,7 +597,7 @@ textarea {
   display: inline-block;
   */
 }
-#hero section article button {
+#hero #hero-content-container section article button {
   background-color: var(--white);
   border: none;
   height: 60px;
@@ -509,39 +605,93 @@ textarea {
   border-radius: 100%;
   margin-left: 30px;
 }
-#hero section #hero-card {
+#hero #hero-content-container section #hero-card {
   background-color: var(--snowDrop);
   margin-top: 70px;
   padding: 24px 20px;
   border-radius: 12px;
 }
-#hero section #hero-card h5 {
+#hero #hero-content-container section #hero-card h5 {
   color: var(--nightBlue);
   font-weight: 600;
   font-size: 0.875rem;
 }
-#hero section #hero-card p {
+#hero #hero-content-container section #hero-card p {
   font-size: 0.875rem;
   font-weight: 600;
   line-height: 1.5rem;
 }
+@media (min-width: 768px) {
+  #hero #hero-content-container aside {
+    grid-area: hero-img;
+  }
+}
+@media (min-width: 768px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+}
+@media (min-width: 1200px) {
+  #hero #hero-content-container section {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #hero #hero-content-container aside {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+  }
+}
+
 /* =============
     Newsletter
 ============= */
 #newsletter {
-  padding: 40px 24px;
+  margin-bottom: 100px;
 }
 #newsletter #newsletter-content {
   background-color: var(--lilyWhite);
   padding: 60px 16px;
 }
-#newsletter #newsletter-content p {
+@media (min-width: 768px) {
+  #newsletter #newsletter-content {
+    padding: 60px 20vw;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 60% 60px auto;
+    grid-template-columns: 60% auto;
+    padding: 0px 0px;
+    gap: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  #newsletter #newsletter-content {
+    -ms-grid-columns: 65% auto;
+    grid-template-columns: 65% auto;
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 992px) {
+  #newsletter #newsletter-content #newletter-left {
+    padding: 60px 0px 60px 60px;
+  }
+}
+#newsletter #newsletter-content #newletter-left p {
   color: var(--grey);
   font-weight: 600;
   line-height: 1.75rem;
   margin: 16px 0;
 }
-#newsletter #newsletter-content form input {
+#newsletter #newsletter-content #newletter-left form input {
   border: none;
   color: var(--grey);
   font-weight: 600;
@@ -552,13 +702,17 @@ textarea {
   border-radius: 8px;
   margin-bottom: 16px;
 }
-#newsletter #newsletter-content form div {
+#newsletter #newsletter-content #newletter-left form div {
   text-align: right;
 }
 #newsletter #newsletter-content aside {
   display: none;
 }
-
+@media (min-width: 992px) {
+  #newsletter #newsletter-content aside {
+    display: block;
+  }
+}
 /* =============
     Packages
 ============= */
@@ -591,6 +745,25 @@ textarea {
   padding: 13px 18px;
   border-radius: 8px;
 }
+@media (min-width: 768px) {
+  #packages #package-card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+    grid-template-columns: repeat(4, 1fr);
+        grid-template-areas: "card-1 card-1 card-2 card-2" "...    card-3 card-3 ...";
+  }
+}
+@media (min-width: 1200px) {
+  #packages #package-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    -ms-grid-columns: 1fr 45px 1fr 45px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "card-1 card-2 card-3";
+    gap: 45px;
+  }
+}
 #packages #package-card-container .package-card {
   background-color: var(--ghost);
   border: 1px solid var(--white);
@@ -620,6 +793,55 @@ textarea {
 #packages #package-card-container .selected {
   background-color: var(--white);
 }
+@media (min-width: 768px) {
+  #packages #package-card-container #card-1 {
+    grid-area: card-1;
+  }
+}
+@media (min-width: 768px) {
+  #packages #package-card-container #card-2 {
+    grid-area: card-2;
+  }
+}
+@media (min-width: 768px) {
+  #packages #package-card-container #card-3 {
+    grid-area: card-3;
+  }
+}
+@media (min-width: 768px) {
+  #packages #package-card-container #card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+  }
+  #packages #package-card-container #card-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 2;
+  }
+  #packages #package-card-container #card-3 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 2;
+  }
+}
+@media (min-width: 1200px) {
+  #packages #package-card-container #card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+  }
+  #packages #package-card-container #card-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+  }
+  #packages #package-card-container #card-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+  }
+}
 
 /* =============
     Process
@@ -630,6 +852,21 @@ textarea {
 #process #process-top-content {
   text-align: center;
 }
+@media (min-width: 768px) {
+  #process #process-top-content {
+    padding: 0 40vw;
+  }
+}
+@media (min-width: 992px) {
+  #process #process-top-content {
+    padding: 0 30vw;
+  }
+}
+@media (min-width: 1200px) {
+  #process #process-top-content {
+    padding: 0 20vw;
+  }
+}
 #process #process-top-content p {
   color: var(--grey);
   font-weight: 600;
@@ -639,6 +876,23 @@ textarea {
 }
 #process #process-card-container {
   border: 1px solid var(--white);
+}
+@media (min-width: 768px) {
+  #process #process-card-container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 10px 1fr 10px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: "process-card-1 process-card-2 process-card-3";
+    gap: 10px;
+  }
+}
+@media (min-width: 1200px) {
+  #process #process-card-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 45px;
+  }
 }
 #process #process-card-container .process-card {
   margin-bottom: 48px;
@@ -657,4 +911,33 @@ textarea {
   font-size: 0.875rem;
   line-height: 1.75rem;
   margin: 20px 0 16px;
+}
+@media (min-width: 768px) {
+  #process #process-card-container #card-1 {
+    grid-area: process-card-1;
+  }
+}
+@media (min-width: 768px) {
+  #process #process-card-container #card-2 {
+    grid-area: process-card-2;
+  }
+}
+@media (min-width: 768px) {
+  #process #process-card-container #card-3 {
+    grid-area: process-card-3;
+  }
+}
+@media (min-width: 768px) {
+  #process #process-card-container #card-1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+  #process #process-card-container #card-2 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+  #process #process-card-container #card-3 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 5;
+  }
 }

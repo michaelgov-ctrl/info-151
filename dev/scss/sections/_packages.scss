@@ -38,6 +38,21 @@
     }
 
     #package-card-container{
+        @include helpers.md{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-areas: "card-1 card-1 card-2 card-2"
+                                 "...    card-3 card-3 ...";
+        }
+
+        @include helpers.xl{
+            max-width: 1200px;
+            margin: 0 auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-areas: "card-1 card-2 card-3";
+            gap: 45px;
+        }
+
         .package-card{
             background-color: var(--ghost);
             border: 1px solid var(--white);
@@ -70,6 +85,24 @@
 
         .selected{
             background-color: var(--white);
+        }
+
+        #card-1{
+            @include helpers.md{
+                grid-area: card-1;
+            }
+        }
+
+        #card-2{
+            @include helpers.md{
+                grid-area: card-2;
+            }
+        }
+
+        #card-3{
+            @include helpers.md{
+                grid-area: card-3;
+            }
         }
     }
 }
