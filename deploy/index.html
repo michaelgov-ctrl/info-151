@@ -26,10 +26,13 @@
             </article>
             
             <article id="hero-card">
-                <img src="img/hero/quote.svg" alt="quote icon">
-                <img src="img/hero/star.svg" alt="star icon">
-                <h5>4.9</h5>
-                <p>There's no shortage of ideas, what's missing is the will to execute them - Seth Godin</p>
+                <div id="stats-bar">
+                    <img src="img/hero/quote.svg" alt="quote icon">
+                    <img src="img/hero/star.svg" alt="star icon" id="star-icon">
+                    <h5>4.9</h5>
+                </div>
+
+                <p id="card-info">There's no shortage of ideas, what's missing is the will to execute them - Seth Godin</p>
             </article>
         </section>
     
@@ -41,10 +44,8 @@
 </section>
 <section id="packages">
     <div id="packages-top-content">
-        <h1 class="section-title">Popular packages</h1>
-        <!--
-        <img src="img/global/green-icon.svg" alt="part of a green outline">
-        -->
+        <h1 class="section-title">Po<span><img src="img/global/green-icon.svg" alt="part of a green outline"></span>pular packages</h1>
+
         <div id="package-button-container">
             <button id="left-arrow"><img src="img/packages/arrow-left.svg" alt="left chevron icon"></button>
             <button id="right-arrow"><img src="img/packages/arrow-right.svg" alt="right chevron icon"></button>
@@ -52,51 +53,62 @@
     </div>
 
     <ul id="package-card-container">
+
         <li class="package-card" id="card-1">
-            <img src="img/packages/card-1.jpg" alt="people at a coffee shop" class="img-scaler">
+            <div class="package-card-img"></div>
             <p>The basic package to start your promotion</p>
 
-            <ul>
-                <li><img src="img/packages/user-1.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-2.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-3.jpg" alt="user icon"></li>
-            </ul>
-            <h4>200K+ users</h4>
-            <h3>$89.00</h3>
+            <div class="package-status-bar">
+                <ul class="user-icons">
+                    <li class="icon-1"></li>
+                    <li class="icon-2"></li>
+                    <li class="icon-3"></li>
+                </ul>
+                <h4>200K+ users</h4>
+                <h3>$89.00</h3>
+            </div>
+
         </li>
+
         <li class="selected package-card" id="card-2">
-            <img src="img/packages/card-2.jpg" alt="people at table" class="img-scaler">
+            <div class="package-card-img"></div>
             <p>The standard package to grow your business</p>
 
-            <ul>
-                <li><img src="img/packages/user-3.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-2.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-1.jpg" alt="user icon"></li>
-            </ul>
-            <h4>140K+ users</h4>
-            <h3>$109.00</h3>
+            <div class="package-status-bar">
+                <ul class="user-icons">
+                    <li class="icon-1"></li>
+                    <li class="icon-2"></li>
+                    <li class="icon-3"></li>
+
+                </ul>
+                <h4>140K+ users</h4>
+                <h3>$109.00</h3>
+            </div>
+
         </li>
-        <li class="package-card" id="card-3">
-            <img src="img/packages/card-3.jpg" alt="people pointing at computer" class="img-scaler">
+
+        <li class="package-card" id="card-3">       
+            <div class="package-card-img"></div>
             <p>The premium package to boost your promotion</p>
 
-            <ul>
-                <li><img src="img/packages/user-1.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-3.jpg" alt="user icon"></li>
-                <li><img src="img/packages/user-2.jpg" alt="user icon"></li>
-            </ul>
-            <h4>99K+ users</h4>
-            <h3>$149.00</h3>
+            <div class="package-status-bar">
+                <ul class="user-icons">
+                    <li class="icon-1"></li>
+                    <li class="icon-2"></li>
+                    <li class="icon-3"></li>
+                </ul>
+                <h4>99K+ users</h4>
+                <h3>$149.00</h3>
+            </div>
+
         </li>
+
     </ul>
 </section>
 <section id="newsletter">
     <div id="newsletter-content">
         <section id="newletter-left">
-            <h1 class="section-title">Subscribe newsletter</h1>
-            <!--
-            <img src="img/global/green-icon.svg" alt="part of a green outline">
-            -->
+            <h1 class="section-title">Sub<span><img src="img/global/green-icon.svg" alt="part of a green outline"></span>scribe newsletter</h1>
             <p>Businesses generally promote their brand, products, and services by identifying audience. No wonder that promotion strategy is one of the most important processes in marketing.</p>
         
             <form action="#">
@@ -115,7 +127,7 @@
 <section id="communication">
     <div id="communication-top-content">
         <section>
-            <h1 class="section-title">Global promotion</h1>
+            <h1 class="section-title">Global p<span><img src="img/global/green-icon.svg" alt="part of a green outline"></span>romotion</h1>
             <!--
             <img src="img/global/green-icon.svg" alt="part of a green outline">
             -->
@@ -130,7 +142,7 @@
 </section>
 <section id="process">
     <div id="process-top-content">
-        <h1 class="section-title">How it works</h1>
+        <h1 class="section-title">How it w<span><img src="img/global/green-icon.svg" alt="part of a green outline"></span>orks</h1>
         <!--
         <img src="img/global/green-icon.svg" alt="part of a green outline">
         -->
@@ -158,7 +170,7 @@
 <section id="about">
     <section id="about-content-container">
         <article id="about-top-content">
-            <h1 class="section-title">About us</h1>
+            <h1 class="section-title">Ab<span><img src="img/global/green-icon.svg" alt="part of a green outline"></span>out us</h1>
             <!--
             <img src="img/global/green-icon.svg" alt="part of a green outline">
             -->
@@ -167,14 +179,18 @@
         
         <section class="about-card">
             <img src="img/about/check-shield.svg" alt="shield with checkmark">
-            <h4>Safe and secured</h4>
-            <p>Safe and secured promotion strategy is one of the most important processes in marketing.</p>
+            <div class="about-card-info">
+                <h4>Safe and secured</h4>
+                <p>Safe and secured promotion strategy is one of the most important processes in marketing.</p>
+            </div>
         </section>
         
         <section class="about-card">
             <img src="img/about/star-people.svg" alt="people with stars overhead">
-            <h4>Highly expert team</h4>
-            <p>We support your marketing voices to reach your target audience, creates interest.</p>
+            <div class="about-card-info">
+                <h4>Highly expert team</h4>
+                <p>We support your marketing voices to reach your target audience, creates interest.</p>
+            </div>
         </section>
     </section>
 

@@ -10,12 +10,30 @@
     #packages-top-content{
         text-align: center;
 
+        @include helpers.md{
+            display: flex;
+            align-items: center;
+        }
+
+        @include helpers.lg{
+            margin-bottom: 70px;
+        }
+
+        @include helpers.xl{
+            width: 1200px;
+            margin: 0 auto 70px;
+        }
+
         #package-button-container{
             background-color: var(--white);
             margin: 24px auto;
             padding: 8px;
             border-radius: 10px;
             display: inline-block;
+
+            @include helpers.md{
+                margin-left: auto;
+            }
         
             button{
                 border: none;
@@ -59,6 +77,14 @@
             margin-bottom: 48px;
             padding: 16px;
             border-radius: 14px;
+
+            .package-card-img{
+                width: 100%;
+                height: 273px;
+                background-position: center;
+                background-size: cover;
+                border-radius: 14px;
+            }
         
             p{
                 color: var(--nightBlue);
@@ -67,20 +93,42 @@
                 line-height: helpers.rem-calc(28);
                 margin: 20px 0 16px;
             }
+            
+            .package-status-bar{
+                display: flex;
+                align-items: center;
+                
+                .user-icons{
+                    display: flex;
+                    align-items: center;
+    
+                    li{
+                        height: 36px;
+                        width: 36px;
+                        border: 1px solid var(--white);
+                        border-radius: 100%;
+                        margin-left: -15px;
+                    }
+                }
 
-            h4{
-                color: var(--grey);
-                font-weight: 600;
-                font-size: helpers.rem-calc(14);
-                line-height: helpers.rem-calc(28);
+                h4{
+                    color: var(--grey);
+                    font-weight: 600;
+                    font-size: helpers.rem-calc(14);
+                    line-height: helpers.rem-calc(28);
+                    margin-right: 20px;
+                }
+    
+                h3{
+                    color: var(--aqua);
+                    font-weight: 600;
+                    font-size: helpers.rem-calc(14);
+                    line-height: helpers.rem-calc(28);
+                    margin-left: auto;
+                }
+
             }
 
-            h3{
-                color: var(--aqua);
-                font-weight: 600;
-                font-size: helpers.rem-calc(14);
-                line-height: helpers.rem-calc(28);
-            }
         }
 
         .selected{
@@ -91,17 +139,68 @@
             @include helpers.md{
                 grid-area: card-1;
             }
+
+            .package-card-img{
+                background-image: url("../img/packages/card-1.jpg");
+            }
+
+            .icon-1{
+                background-image: url("../img/packages/user-1.jpg");
+            }
+
+            .icon-2{
+                background-image: url("../img/packages/user-3.jpg");
+                background-position: 80% 80%;
+            }
+
+            .icon-3{
+                background-image: url("../img/packages/user-2.jpg");
+            }
         }
 
         #card-2{
             @include helpers.md{
                 grid-area: card-2;
             }
+
+            .package-card-img{
+                background-image: url("../img/packages/card-2.jpg");
+            }
+            
+            .icon-1{
+                background-image: url("../img/packages/user-1.jpg");
+            }
+
+            .icon-2{
+                background-image: url("../img/packages/user-2.jpg");
+            }
+
+            .icon-3{
+                background-image: url("../img/packages/user-3.jpg");
+                background-position: 80% 80%;
+            }
         }
 
         #card-3{
             @include helpers.md{
                 grid-area: card-3;
+            }
+
+            .package-card-img{
+                background-image: url("../img/packages/card-3.jpg");
+            }
+            
+            .icon-1{
+                background-image: url("../img/packages/user-3.jpg");
+                background-position: 80% 80%;
+            }
+
+            .icon-2{
+                background-image: url("../img/packages/user-1.jpg");
+            }
+
+            .icon-3{
+                background-image: url("../img/packages/user-2.jpg");
             }
         }
     }

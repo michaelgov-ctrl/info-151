@@ -18,7 +18,8 @@
 
         max-width: 1200px;
         margin: 0 auto;
-    }    
+    }
+
     #about-content-container{
         #about-top-content{
             p{
@@ -31,16 +32,20 @@
         }
 
         .about-card{
-            margin-bottom: 48px;
-            padding: 16px;
-            border-radius: 14px;
+            display: flex;
+            align-items: center;
 
-            p{
-                color: var(--grey);
-                font-weight: 600;
-                line-height: helpers.rem-calc(28);
-                margin-top: 24px;
-                margin-bottom: 24px;
+            .about-card-info{
+                padding: 16px;
+                border-radius: 14px;
+
+                p{
+                    color: var(--grey);
+                    font-weight: 600;
+                    line-height: helpers.rem-calc(28);
+                    margin-top: 24px;
+                    margin-bottom: 24px;
+                }
             }
         }
     }
