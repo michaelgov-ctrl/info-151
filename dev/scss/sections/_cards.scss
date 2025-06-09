@@ -1,0 +1,36 @@
+
+.card {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  .card img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 1rem auto 0;
+    display: block;
+  }
+
+  .svg {
+    width: 10%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    margin: 1rem auto 0;
+    display: block;
+  }
+}

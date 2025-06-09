@@ -1,0 +1,58 @@
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 2rem;
+    text-align: center;
+    color: #222;
+
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  h2 {
+    margin: 0 0 0.15rem 0;
+    font-size: 2.2rem;
+    color: #222;
+  }
+
+  h3 {
+    margin: 0 0 0.20rem 0;
+    font-size: 2.0rem;
+    color: #222;
+  }
+  
+  h4 {
+    margin: 0 0 0.25rem 0;
+    font-size: 1.8rem;
+    color: #222;
+  }
+
+  h5 {
+    margin: 0.5rem 0 0.3rem 0;
+    font-size: 1.6rem;
+    color: #555;
+  }
+
+  p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: #333;
+  }
+
+  a {
+    color: #0645ad;
+    font-weight: 500;
+    word-break: break-word;
+    font-size: 1.1rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
