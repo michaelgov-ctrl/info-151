@@ -6,10 +6,17 @@
   padding: 1.5rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   transition: transform 0.2s ease, box-shadow 0.2s ease;
-
   display: flex;
   flex-direction: column;
   gap: 0.75rem;
+
+  h1, h2, h3, h4, h5 {
+    color: #222;
+  }
+
+  p, li {
+    color: #333
+  }
 
   &:hover {
     transform: translateY(-4px);
