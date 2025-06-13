@@ -1,6 +1,7 @@
 @charset 'utf-8';
 
 // Sections
+@forward "sections/_burger";
 @forward "sections/_about";
 @forward "sections/_associations";
 @forward "sections/_cards";
@@ -8,4 +9,5 @@
 @forward "sections/_intro";
 @forward "sections/_projects";
 @forward "sections/_resume";
+@forward "sections/_jump";
 @forward "sections/_base";

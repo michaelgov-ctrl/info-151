@@ -1,0 +1,18 @@
+#jump-box {
+  position: fixed;
+  width: 200px;
+  height: 60px;
+  background: lightblue;
+  border: 2px solid black;
+  border-radius: 12px;
+  color: #222;
+  font-size: 14px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 0.5rem;
+  transition: top 0.3s ease, left 0.3s ease, background 0.3s;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}

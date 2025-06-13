@@ -9,8 +9,17 @@
 </head>
 
 <body>
-
-
+<nav class="mobile-nav">
+<button class="burger" id="burger">&#9776;</button>
+<ul class="mobile-menu" id="mobileMenu">
+    <li><a href="#intro">Intro</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#resume">Resume</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#associations">Associations</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
 <section id="intro">
     <h2>Howdy!</h2>
 
@@ -34,7 +43,7 @@
     </div>
 
     <ul id="about-card-container">
-        <li class="card">
+        <li class="card" data-link="https://www.chess.com/member/tootypooty">
             <h4>Chess</h4>
             <p>I enjoy playing dubious lines in any given game of chess.</p>
             <a href="https://www.chess.com/member/tootypooty">my Chess.com profile</a></p>
@@ -46,7 +55,7 @@
             <img src="img/about/climbing.jpg" alt="Two people cheesing for the camera in Custer State Park">
         </li>
 
-        <li class="card">
+        <li class="card" data-link="https://leetcode.com/u/MichaelGov-ctrl/">
             <h4>Coding</h4>
             <h5>Some languages I've worked with</h5>
             <p>Bash</p>
@@ -59,13 +68,12 @@
             <a href="https://leetcode.com/u/MichaelGov-ctrl/">My mediocre leetcode profile</a></p>
         </li>
   
-        <li class="card">
+        <li class="card" data-link="https://github.com/michaelgov-ctrl/choctopus44">
             <h4>Keyboards</h4>
             <p>I have an ever evolving collection of ergo keyboards. Currently I am typing on a choctopus44</p>
             <img src="img/about/keeb.jpg" alt="Picture of a choctopus44 on a desk">
             <a href="https://github.com/michaelgov-ctrl/choctopus44">personal choctopus44 repo</a></p>
         </li>
-
     </ul>
 
 </section>
@@ -140,23 +148,23 @@
     </div>
 
     <ul id="projects-card-container">
-        <li class="card">
+        <li class="card" data-link="https://github.com/michaelgov-ctrl/bad-chess">
             <h4>bad-chess.com</h4>
             <img src="img/projects/DarkQueen.svg" alt="Picture of a dark queen chess piece" class="svg">
             <a href="https://github.com/michaelgov-ctrl/bad-chess">bad-chess</a>
         </li>
 
-        <li class="card">
+        <li class="card" data-link="https://github.com/michaelgov-ctrl/CI-102-SecurityProject">
             <h4>CI 102 Security Project</h4>
             <a href="https://github.com/michaelgov-ctrl/CI-102-SecurityProject">speed-optimized encryption package</a>
         </li>
 
-        <li class="card">
+        <li class="card" data-link="https://github.com/michaelgov-ctrl/CT-201-infosec_project">
             <h4>CT 201 InfoSec Project</h4>
             <a href="https://github.com/michaelgov-ctrl/CT-201-infosec_project">targeted memory scraper</a>
         </li>
 
-        <li class="card">
+        <li class="card" data-link="https://github.com/michaelgov-ctrl/Burn-After-Reading">
             <h4>Burn After Reading</h4>
             <a href="https://github.com/michaelgov-ctrl/Burn-After-Reading">one time message sharer</a>
         </li>
@@ -170,25 +178,23 @@
     </div>
 
     <ul id="associations-card-container">
-        <li class="card">
+        <li class="card" data-link="https://blog.chocolatey.org/2025/06/michael-governanti-joins-chocolatey/">
             <h4>Chocolatey Software</h4>
             <a href="https://blog.chocolatey.org/2025/06/michael-governanti-joins-chocolatey/">Me</a></p>
         </li>
 
-        <li class="card">
+        <li class="card" data-link="https://www.credly.com/badges/ca9c2229-0fed-43b5-bd32-6bfc183cbc5a/linked_in_profile">
             <h4>CompTIA</h4>
             <a href="https://www.credly.com/badges/ca9c2229-0fed-43b5-bd32-6bfc183cbc5a/linked_in_profile">CompTIA Sec+</a></p>
         </li>
     </ul>
 </section>
 <section id="contact">
-    Contact
-    <a href="mailto:michaelgovernanti@gmail.com">mag574@drexel.edu</a></p>
-    <a href="https://www.linkedin.com/in/michael-governanti-3840ba219/">linkedin</a></p>
-    <a href="https://github.com/michaelgov-ctrl">github</a></p>
+    <a href="mailto:michaelgovernanti@gmail.com">mag574@drexel.edu</a>
+    <a href="https://www.linkedin.com/in/michael-governanti-3840ba219/">linkedin</a>
+    <a href="https://github.com/michaelgov-ctrl">github</a>
 </section>
-
-    <script src="js/scripts-min.js"></script>
+<div id="jump-box">This is using two JS libraries</div>    <script src="js/clicky.js"></script>
 </body>
 
 </html>
